@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+nav{
+    background-color: rgb(3, 3, 48);
+    height: 10vh;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 17px 25px;
+    font-weight: 600;
+    font-size: 1.2em;
+} 
+
+.menu{
+    list-style: none;
+    margin-top: 7px;
+}
+
+.menu-items{
+    display: inline;
+}
+
+.menu-items a:hover,
+.menu-items a.active{
+    background: linear-gradient(to bottom left, rgb(255, 238, 0) 10%, rgb(112, 102, 11) 100%);
+    color: rgb(255, 246, 246);
+    border-bottom: 3px solid white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.nav-btn{
+    display: none;
+}
+
+.hidden{
+    display: none;
+}
+
+.head-content{
+    background: url(../images/engine1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    align-content: center;
+}
+.content{
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-backdrop-filter: contrast(150%);
+    backdrop-filter: contrast(150%);
+    padding: 13vh;
+}
+
+.content  h2{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 600;  
+}
+
+.content-service{
+    background-color: rgba(0, 110, 255, 0.055);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 20vw;
+    height: 20vh;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card:hover{
+    box-shadow: 3px 3px 5px 5px black;
+}
+
+.col h4{
+    border-right: 20px solid rgb(255, 255, 255);
+    font-weight: 700;
+    background: linear-gradient(to bottom left, rgba(255, 238, 2, 0.945) 10%, rgb(173, 160, 39) 100%);
+    color: white;
+    padding: 10px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.brand .cl img{
+    width: 15vw;
+    cursor: pointer;
+}
+
+.brand .cl h4{
+    color: black;
+    background: none;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.brand .cl .bt:hover{
+    box-shadow: 1px 1px 3px 3px  #000000 ;
+}
+
+footer{
+    height: 40vh;
+    background-color: rgb(3, 3, 48);
+}
+
+footer h1{
+    font-size: 50px;
+}
+
+.contact{
+    width: 40px;
+    border-radius: 15px;
+}
+@media (min-width: 574px)
+{
+    .hidden{
+        display: none;
+    }
+}
+
+@media (max-width: 575px)
+{
+    .hide{
+        display: none;
+    }
+
+    .menu{
+        background-color: white;
+        width: 95vw;
+        z-index: 1;
+        padding: 0;
+    }
+
+    .menu-items{
+        display: block;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .menu-items a{
+        text-align: center;
+        color: #000000;
+        padding: 5vw 15vh;
+    }
+
+    .nav-btn{
+        display: block;
+    }
+
+    .content{
+        padding: 18vw 8vh;
+    }
+
+    .content  h2{
+        font-size: 30px;
+    }
+
+    .content  h4{
+        font-size: 20px;
+    }
+
+    .content-service{
+        display: block;
+        justify-items: center;
+    }
+
+    .card{
+        width: 80vw;
+    }
+
+    .brand .cl img{
+        width: 80vw;
+    }
+}
